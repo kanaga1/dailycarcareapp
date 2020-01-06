@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/book">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignStart="@+id/itemCardView"
+        android:fillViewport="false"
+        android:layout_alignLeft="@+id/itemCardView"
+        tools:ignore="NotSibling">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:paddingTop="80dp"
+            android:id="@+id/itemCardView"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="15dp"
+            android:padding="3dp"
+            android:elevation="4dp"
+            android:translationZ="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center|center_horizontal"
+
+            android:focusableInTouchMode="true"
+            android:background="#ffffff"
+            card_view:cardCornerRadius="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:layout_width="212dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/dcc1" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center_horizontal"
+                    android:text="Contact Us"
+                    android:textColor="#002663"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="150dp"
+                    android:text="Company  "
+                    android:textColor="#00c853"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="150dp"
+                    android:text="DailyCarCare "
+
+                    android:textColor="#004d40"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/monthly1"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="330dp"
+                    android:text="Email       "
+                    android:textColor="#00c853"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="330dp"
+                    android:text="info@dailycarcare.in "
+
+                    android:textColor="#004d40"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/monthly2"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="190dp"
+                    android:text="Address  "
+                    android:textColor="#00c853"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="190dp"
+                    android:text="69, Shanmuga Theatre Road,
+R.S. Puram,\nCoimbatore -641 002, \nTamil Nadu,
+India. "
+
+                    android:textColor="#004d40"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/monthly3"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="290dp"
+                    android:text="Mobile     "
+                    android:textColor="#00c853"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tvaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="290dp"
+                    android:text="+91 96009 13401 "
+
+                    android:textColor="#004d40"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvsaddsress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="410dp"
+                    android:text=" "
+
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>

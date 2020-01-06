@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="name">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="btn_login">Sign In</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="tv_register">Register</string>
+    <string name="et_mobile">Mobile</string>
+    <string name="et_name">Name</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="et_vehicle_no">Vehicle No</string>
+    <string name="et_vehicle_model">Vehicle Model</string>
+    <string name="mt_address">Address</string>
+    <string name="btn_register">Register</string>
+    <string name="profile">Your Profile</string>
+    <string name="book_now">Book Now</string>
+    <string name="booking_history">Booking History</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="package_type">Select Package Type</string>
+    <string-array name="options_array">
+        <item>DailyCarCare</item>
+        <item>Profile</item>
+        <item>Booking History</item>
+        <item>Book Now</item>
+
+    </string-array>
+    <string-array name="package_arrays">
+        <item>Select Package Type</item>
+
+        <item>Monthly Wash</item>
+        <item>6 Month Wash</item>
+    </string-array>
+    <string name="vehicle_type">Select Vehicle Type</string>
+
+    <string-array name="vehicle_arrays">
+        <item>Select Vehicle Type</item>
+        <item>Hatchback/Sedan</item>
+        <item>SUV/MUV</item>
+    </string-array>
+    <string name="passworderror">Enter atleast one special character, number, alphabets</string>
+    <string name="book">Book now</string>
+    <string name="nameerror">Enter a valid name</string>
+    <string name="emailerror">Enter a valid email address</string>
+    <string name="mobileerror">Enter a valid mobile number</string>
+    <string name="veherror">Enter a valid vehicle n</string>
+    <string name="addresserror">Enter a valid address</string>
+    <string name="modelerror">Enter a valid model name</string>
+    <string name="menu_settings">Settings</string>
+    <string name="visit">Visit AndroidBegin.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

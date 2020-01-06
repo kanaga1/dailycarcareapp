@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/book"
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="564dp"
+        android:layout_alignStart="@+id/itemCardView"
+        android:fillViewport="false"
+        android:layout_alignLeft="@+id/itemCardView"
+        tools:ignore="NotSibling">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:paddingTop="80dp"
+            android:id="@+id/itemCardView"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="15dp"
+            android:padding="3dp"
+            android:elevation="4dp"
+            android:translationZ="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center|center_horizontal"
+
+            android:focusableInTouchMode="true"
+            android:background="#ffffff"
+            card_view:cardCornerRadius="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="212dp"
+                    android:layout_height="56dp"
+
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/dcc1" />
+
+                <TextView
+                    android:id="@+id/namer"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text=" "
+                    android:textColor="#002663"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_date"
+                        android:layout_width="117dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|right"
+                        android:background="@drawable/rounded_button"
+                        android:onClick="onButtonClicked"
+                        android:text="Select Date"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:id="@+id/in_date"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_time"
+                        android:layout_width="117dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|right"
+                        android:background="@drawable/rounded_button"
+                        android:onClick="onClick"
+                        android:text="Select Time"
+                        android:textColor="#ffffff" />
+
+                    <EditText
+                        android:id="@+id/in_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="136dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded"
+                    android:onClick="onBook"
+                    android:text="Re-schedule"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>
